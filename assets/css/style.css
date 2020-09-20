@@ -1,0 +1,567 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-feature-settings: "palt";
+  font-weight: 300;
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+@media only screen and (max-width: 750px) {
+  body {
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
+}
+
+html {
+  font-size: calc(100vw / 32);
+}
+@media only screen and (min-width: 751px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 751px) {
+  .sp {
+    display: none;
+  }
+
+  #wrapper {
+    min-width: 1280px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none;
+  }
+}
+@-webkit-keyframes open_logo_l {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@-o-keyframes open_logo_l {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@-moz-keyframes open_logo_l {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@keyframes open_logo_l {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+@-webkit-keyframes open_scale {
+  0% {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes open_scale {
+  0% {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes open_scale {
+  0% {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes open_scale {
+  0% {
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes open_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  36% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@-o-keyframes open_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  36% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@-moz-keyframes open_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  36% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@keyframes open_image {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  36% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@-webkit-keyframes out_load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+}
+@-o-keyframes out_load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+}
+@-moz-keyframes out_load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+}
+@keyframes out_load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+}
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  background: #FFF;
+}
+.loading .bg_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0;
+}
+.loading .load_catch {
+  position: absolute;
+}
+.loading .load_catch img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+@media only screen and (min-width: 751px) {
+  .loading .bg_image {
+    background-image: url("../img/main-up_pc.jpg");
+  }
+  .loading .load_catch {
+    width: 918px;
+    left: calc(50% - 459px);
+    top: calc(50% - 45px);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .loading .bg_image {
+    background-image: url("../img/main-up_sp.jpg");
+  }
+  .loading .load_catch {
+    width: 648px;
+    width: 86.4vw;
+    left: 50%;
+    margin-left: -43.2vw;
+    top: 50%;
+    margin-top: -2.14vw;
+  }
+}
+.loading.open {
+  -webkit-animation: out_load 1.2s cubic-bezier(0.5, 1, 0.89, 1) 6.2s forwards;
+  -moz-animation: out_load 1.2s cubic-bezier(0.5, 1, 0.89, 1) 6.2s forwards;
+  -o-animation: out_load 1.2s cubic-bezier(0.5, 1, 0.89, 1) 6.2s forwards;
+  animation: out_load 1.2s cubic-bezier(0.5, 1, 0.89, 1) 6.2s forwards;
+}
+.loading.open .load_catch {
+  -webkit-animation: open_scale 2s cubic-bezier(0.12, 0, 0.39, 0) forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 2.2s forwards;
+  -moz-animation: open_scale 2s cubic-bezier(0.12, 0, 0.39, 0) forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 2.2s forwards;
+  -o-animation: open_scale 2s cubic-bezier(0.12, 0, 0.39, 0) forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 2.2s forwards;
+  animation: open_scale 2s cubic-bezier(0.12, 0, 0.39, 0) forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 2.2s forwards;
+}
+.loading.open .load_catch .img_l {
+  -webkit-animation: open_logo_l 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+  -moz-animation: open_logo_l 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+  -o-animation: open_logo_l 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+  animation: open_logo_l 0.8s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+}
+.loading.open .bg_image {
+  -webkit-animation: open_image 4.5s linear 1.2s forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 5.2s forwards;
+  -moz-animation: open_image 4.5s linear 1.2s forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 5.2s forwards;
+  -o-animation: open_image 4.5s linear 1.2s forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 5.2s forwards;
+  animation: open_image 4.5s linear 1.2s forwards, out_load 0.8s cubic-bezier(0.32, 0, 0.67, 0) 5.2s forwards;
+}
+
+.main_contents {
+  width: 100vw;
+  position: relative;
+}
+.main_contents h1, .main_contents .catch {
+  position: absolute;
+  opacity: 0;
+}
+.main_contents .copyright {
+  position: absolute;
+  color: #FFF;
+}
+@media only screen and (min-width: 751px) {
+  .main_contents {
+    min-width: 1280px;
+  }
+  .main_contents h1 {
+    width: 414px;
+    left: calc(50% - 207px);
+    top: 84px;
+  }
+  .main_contents .catch {
+    width: 918px;
+    left: calc(50% - 459px);
+    top: 310px;
+  }
+  .main_contents .copyright {
+    font-size: 10px;
+    bottom: 40px;
+    left: 40px;
+  }
+  .main_contents .copyright span {
+    padding-left: 2em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main_contents {
+    min-height: 100vh;
+    background: url("../img/main_sp.jpg") no-repeat center top;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .main_contents h1 {
+    width: 416px;
+    width: 55.46vw;
+    left: 50%;
+    margin-left: -27.74vw;
+    top: 7.2vw;
+  }
+  .main_contents .catch {
+    width: 648px;
+    width: 86.4vw;
+    left: 50%;
+    margin-left: -43.2vw;
+    top: 32.53vw;
+  }
+  .main_contents .copyright {
+    font-size: 0.6rem;
+    bottom: 3vw;
+    left: 3vw;
+    line-height: 1.4;
+  }
+  .main_contents .copyright span {
+    display: block;
+  }
+}
+.main_contents.open h1 {
+  -webkit-animation: open_logo_l 0.8s ease-out 7s forwards;
+  -moz-animation: open_logo_l 0.8s ease-out 7s forwards;
+  -o-animation: open_logo_l 0.8s ease-out 7s forwards;
+  animation: open_logo_l 0.8s ease-out 7s forwards;
+}
+.main_contents.open .catch {
+  -webkit-animation: open_logo_l 0.8s ease-out 7.5s forwards;
+  -moz-animation: open_logo_l 0.8s ease-out 7.5s forwards;
+  -o-animation: open_logo_l 0.8s ease-out 7.5s forwards;
+  animation: open_logo_l 0.8s ease-out 7.5s forwards;
+}
